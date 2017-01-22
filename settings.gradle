@@ -1,0 +1,1 @@
+include ':testrecyclerviewdemo', ':testjacksondemo', ':testgreen', ':testkryo', ':app', ':myregexdemo', ':testrippledemo', ':testswipemenulistviewdemo', ':testswipmenulistviewlibrary', ':testrxjava', ':testmvprxjava', ':testclockdemo', ':testweexdemo'
