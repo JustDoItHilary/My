@@ -41,10 +41,10 @@ public class MainActivity extends ListActivity {
         SQLiteDatabase sqLiteDatabase=myApplication.db;
         String column=MyDataDao.Properties.Name.columnName;
         String order=column+" COLLATE LOCALIZED ASC";
-        Cursor cursor1=db.query(dataDao.getTablename(),dataDao.getAllColumns(),null,null,null,null,order);
         //获取全局的daoSession然后通过daoSession获取mydataDao
         dataDao = myApplication.daoSession.getMyDataDao();
         db = myApplication.db;
+        Cursor cursor1=db.query(dataDao.getTablename(),dataDao.getAllColumns(),null,null,null,null,order);
         //获取name字段的行
         String textColumn = MyDataDao.Properties.Name.columnName;
         //按本地语言进行排序
